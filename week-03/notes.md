@@ -132,6 +132,17 @@ Your public key has been saved in /Users/yourname/.ssh/id_ed25519.pub
 
 Congratulations! You now have SSH keys.
 
+### ⚙️ Optional: Add to SSH Agent
+
+If you want SSH to remember this key:
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+This means you won't have to type your passphrase every time you use SSH!
+
 ## How to Connect to Another Computer
 
 ### Basic Connection
